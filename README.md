@@ -4,6 +4,7 @@ A python script for adding text watermark on bottom right
 # Environment
 - OS : MacOS 10.13.6
 - Language: Python 3.6.4
+- pillow: 5.3.0
 
 # Prerequisite
 - Create a .py file `setting.py` within following lines
@@ -11,6 +12,11 @@ A python script for adding text watermark on bottom right
 text_watermark = 'Your text watermark(now only support English)'
 ```
 along with the file README.md.
+
+- solve dependency issue
+```
+$ pip3 install pillow==5.3.0
+```
 
 # Usage
 ```
