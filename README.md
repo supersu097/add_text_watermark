@@ -37,6 +37,8 @@ optional arguments:
 ```bash
 $ python3 watermark.py -i 1.png -o
 ```
+![](demo.jpeg)
+
 
 # Reference
 - [1](http://turboagram.com/FiEe)
