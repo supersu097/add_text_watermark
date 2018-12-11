@@ -40,6 +40,11 @@ $ python3 watermark.py -i 1.png -o
 ![](demo.jpeg)
 
 
+# Run everywhere
+```
+alias watermark="python3 $WP/code/myproject/add_text_watermark/watermark.py"
+```
+
 # Reference
 - [1](http://turboagram.com/FiEe)
 - [2](http://turboagram.com/FiHD)
