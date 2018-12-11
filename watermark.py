@@ -8,10 +8,13 @@ def main(image_files, do_override):
         img = Image.open(image_file)
         size = img.size
         draw = ImageDraw.Draw(img)
-        ttfront = ImageFont.truetype('arial.ttf', 35)
+        font_path = os.path.dirname(os.path.abspath(__file__))
+        ttfront = ImageFont.truetype(os.path.join(font_path, 'arial.ttf'), 35)
         text = setting.text_watermark
         x = (size[0] - len(text)*18)
         y = (size[1] - 45)
+        # rgb color reference
+        # https://blog.csdn.net/daichanglin/article/details/1563299
         draw.text((x,y),text,fill=(192,192,192), font=ttfront)
         if do_override:
             img.save(image_file)
